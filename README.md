@@ -129,15 +129,30 @@
 | 4    | 1193      | [분수 찾기](8단계/4단계)                    | [분수 찾기](<https://www.acmicpc.net/problem/1193>)          |
 | 5    | 1011      | [Fly me to the Alpha Centauri](8단계/5단계) | [Fly me to the Alpha Centauri](<https://www.acmicpc.net/problem/1011>) |
 | 6    | 2866      | [달팽이는 올라가고 싶다](8단계/6단계)       | [달팽이는 올라가고 싶다](<https://www.acmicpc.net/problem/2869>) |
-| 7    |           |                                             |                                                              |
-| 8    |           |                                             |                                                              |
-| 9    |           |                                             |                                                              |
+| 7    | 10250     | [ACM 호텔](8단계/7단계)                     | [ACM 호텔](<https://www.acmicpc.net/problem/10250>)          |
+| 8    | 2775      | [부녀회장이 될테야](8단계/8단계)            | [부녀회장이 될테야](<https://www.acmicpc.net/problem/2775>)  |
+| 9    | 6064      | [카잉 달력](8단계/9단계)                    | [카잉 달력](<https://www.acmicpc.net/problem/6064>)          |
 
 
 
 ------
 
 ## 9단계. 수학 2
+
+| 단계 | 문제 번호 |              제목              |                           링크                            |
+| :--: | :-------: | :----------------------------: | :-------------------------------------------------------: |
+|  1   |   1978    |    [소수 찾기](9단계/1단계)    |    [소수 찾기](<https://www.acmicpc.net/problem/1978>)    |
+|  2   |   2581    |      [소수](9단계/2단계)       |      [소수](<https://www.acmicpc.net/problem/2581>)       |
+|  3   |   1929    |   [소수 구하기](9단계/3단계)   |   [소수 구하기](<https://www.acmicpc.net/problem/1929>)   |
+|  4   |   4948    |  [베르트랑 공준](9단계/4단계)  |  [베르트랑 공준](<https://www.acmicpc.net/problem/4948>)  |
+|  5   |   9020    | [골드바흐의 추측](9단계/5단계) | [골드바흐의 추측](<https://www.acmicpc.net/problem/9020>) |
+|  6   |           |                                |                                                           |
+|  7   |           |                                |                                                           |
+|  8   |           |                                |                                                           |
+|  9   |           |                                |                                                           |
+|  10  |           |                                |                                                           |
+
+
 
 ------
 
