@@ -1,58 +1,59 @@
 #include <iostream>
-#include <cstring>
 #include <vector>
 #include <algorithm>
+#include <cmath>
 using namespace std;
 
-unsigned int num[8001]={0};
+
 vector<int> a;
 int main()
 {
+	vector<int> num(8001, 0);
 	int N, tmp;
-	scanf("%d", &N);
-	float average = 0;
-	int min = 100000;
-	int max = -10000;
-
+	cin>>N;
+	int average = 0;
+	int min_num = 4000;
+	int max_num = -4000;
+	int max_cnt = 0;
 	for(int i=0; i<N; i++)
 	{
 		cin>>tmp;
 		average += tmp;	//산술평균을 구하기 위한 값
-		num[tmp+4000]++;
 		a.push_back(tmp);
-		if(min > tmp)
-			min = tmp;
-		if(max < tmp)
-			max = tmp;
+		max_num = max(max_num, tmp);
+		min_num = min(min_num, tmp);
 	}
-
-	printf("%d\n", average/N<0?int(average/N-0.5):int(average/N+0.5));
+	
+	
 	sort(a.begin(), a.end());
-	printf("%d\n", a[int(N/2)]);
-	vector<int> check;
-	
-	int cnt = 0;
-	
-	for(int i=0; i<=8000; i++)
+
+	for(int i=0; i<N; i++)
 	{
-		if(num[i]>cnt)	//가장 많이 나타나는 값이라면
+		num[a[i]+4000]++;
+	}
+	for(int i=0; i<8001; i++)
+	{
+		max_cnt= max(max_cnt, num[i]);
+	}
+	int cnt = 0;
+	int idx = 0;
+	for(int i=0; i<8001; i++)
+	{
+		if(num[i] == max_cnt)
 		{
-			cnt = num[i];
-			check.clear();
-			check.push_back(i);
+			cnt++;
+			idx = i - 4000;
 		}
-		else if(num[i] == cnt)
+		if(cnt == 2)
 		{
-			check.push_back(i);
+			idx = i - 4000;
+			break;
 		}
 	}
-
-	if(check.size() > 1)
-		printf("%d\n", check[1]-4000);
-	else if(check.size() == 1)
-		printf("%d\n", check[0]-4000);
-
-	printf("%d", max-min);
+	cout<<round(average/(double)N)<<'\n';
+	printf("%d\n", a[int(N/2)]);
+	printf("%d\n", idx);
+	printf("%d", max_num-min_num);
 
 	return 0;
 }
